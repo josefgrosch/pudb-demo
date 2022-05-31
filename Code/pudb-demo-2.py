@@ -1,9 +1,26 @@
 #!/usr/bin/env python3
 
-import os, sys
+import sys
+import time
 
 def main():
+    # export PYTHONBREAKPOINT="pudb.set_trace"
+    a_dict = {}
+    a_dict['this'] = 'that'
 
+    foo()
+
+    sys.exit(0)
+    # End of main
+
+def foo():
+
+    bar()
+
+    return
+    # End of foo
+    
+def bar():
     i = 3
 
     for index in range(1, 20):
@@ -12,10 +29,10 @@ def main():
             breakpoint()
         else:
             print(f"index value: {index}")
+            time.sleep(1)
             
-
-    sys.exit(0)
-    # End of main
-
+    return
+    # End of bar
+    
 if __name__ == '__main__':
     main()
