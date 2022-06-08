@@ -11,6 +11,8 @@ import os, sys
 def main():
     i = 0
 
+    where = "In main"
+    
     p_dict = {}
     p_dict['i'] = i
 
@@ -30,6 +32,8 @@ def main():
 def fee(p_dict):
     j = 0
 
+    where = "In fee"
+    
     p_dict['i'] += 1
     p_dict['j'] = j
 
@@ -48,6 +52,8 @@ def fee(p_dict):
 # ------------------------------------------------
 def fie(p_dict):
     k = 0
+
+    where = "In fie"
     
     p_dict['i'] += 1
     p_dict['j'] += 1
@@ -69,6 +75,8 @@ def fie(p_dict):
 def foo(p_dict):
     l = 0
 
+    where = "In foo"
+    
     p_dict['i'] += 1
     p_dict['j'] += 1
     p_dict['k'] += 1
@@ -88,6 +96,8 @@ def foo(p_dict):
 # ------------------------------------------------
 def fum(p_dict):
     m = 0
+
+    where = "In fum"
     
     p_dict['i'] += 1
     p_dict['j'] += 1
